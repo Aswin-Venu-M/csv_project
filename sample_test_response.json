@@ -1,0 +1,34 @@
+{
+    "successful_upload": {
+        "total_records": 2,
+        "successful_records": 2,
+        "failed_records": 0,
+        "errors": []
+    },
+    "failed_upload": {
+        "total_records": 2,
+        "successful_records": 0,
+        "failed_records": 2,
+        "errors": [
+            {
+                "row": 2,
+                "errors": {
+                    "email": ["Invalid email format"],
+                    "age": ["Age must be between 0 and 120"]
+                }
+            },
+            {
+                "row": 3,
+                "errors": {
+                    "email": ["Email already exists"]
+                }
+            }
+        ]
+    },
+    "invalid_file": {
+        "error": "Only CSV files are allowed"
+    },
+    "no_file": {
+        "error": "No file uploaded"
+    }
+}
